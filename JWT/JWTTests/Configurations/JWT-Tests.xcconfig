@@ -1,0 +1,27 @@
+//
+//  JWT-Tests.xcconfig
+//
+//  Created by Alexander Trishyn on 7/6/15.
+//  Copyright (c) 2015 Lohika. The MIT License (MIT).
+//
+
+// Linking.
+BUNDLE_LOADER = $(TEST_HOST)
+
+// Packaging.
+PRODUCT_NAME = JWTTests
+INFOPLIST_FILE = $(PRODUCT_NAME)/$(TARGET_NAME)-Info.plist
+WRAPPER_EXTENSION = xctest
+
+// Search Paths.
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+FRAMEWORK_SEARCH_PATHS = $(SDKROOT)/Developer/Library/Frameworks $(inherited) $(DEVELOPER_FRAMEWORKS_DIR)
+
+HEADER_SEARCH_PATHS = $(inherited) $(SRCROOT)/$(PROJECT_NAME)/**
+
+// Unit Testing.
+TEST_HOST = $(BUNDLE_LOADER)
+
+// Compiler - Language.
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREFIX_HEADER = $(PRODUCT_NAME)/$(TARGET_NAME)-Prefix.pch

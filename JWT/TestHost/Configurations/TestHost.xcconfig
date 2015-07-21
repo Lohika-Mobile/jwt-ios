@@ -1,0 +1,29 @@
+//
+//  TestHost.xcconfig
+//
+//  Created by Alexander Trishyn on 7/6/15.
+//  Copyright (c) 2015 Lohika. The MIT License (MIT).
+//
+
+SDKROOT = iphoneos
+
+PRODUCT_NAME = $(TARGET_NAME)
+INFOPLIST_FILE = $(PRODUCT_NAME)/$(PRODUCT_NAME)-Info.plist
+
+// Deployment.
+COPY_PHASE_STRIP = NO
+
+// Search Paths.
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+
+// Compiler - Language.
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREFIX_HEADER = $(PRODUCT_NAME)/$(PRODUCT_NAME)-Prefix.pch
+
+OTHER_LDFLAGS = $(inherited) -ObjC
+
+HEADER_SEARCH_PATHS = $(inherited)
+LIBRARY_SEARCH_PATHS = $(inherited)
+
+// Asset Catalog Compiler - Options.
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon

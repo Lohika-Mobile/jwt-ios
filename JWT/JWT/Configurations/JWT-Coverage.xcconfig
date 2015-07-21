@@ -1,0 +1,14 @@
+//
+//  JWT-CodeCoverage.xcconfig
+//
+//  Created by Alexander Trishyn on 7/6/15.
+//  Copyright (c) 2015 Lohika. The MIT License (MIT).
+//
+
+#include "JWT.xcconfig"
+
+TEST_RESULTS_DIR_NAME = $(SRCROOT)/Autobuild/unit-tests
+TEST_COVERAGE_DIR_NAME = $(TEST_RESULTS_DIR_NAME)/coverage
+
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES
+GCC_GENERATE_TEST_COVERAGE_FILES = YES

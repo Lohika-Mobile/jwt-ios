@@ -1,0 +1,27 @@
+//
+//  JWT.xcconfig
+//
+//  Created by Alexander Trishyn on 7/6/15.
+//  Copyright (c) 2015 Lohika. The MIT License (MIT).
+//
+
+#include "Version.xcconfig"
+
+// Code Signing.
+CODE_SIGN_ENTITLEMENTS =
+
+// Linking.
+DEFINES_MODULE = YES
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+DYLIB_INSTALL_NAME_BASE = @rpath
+
+// Packaging.
+PRODUCT_NAME = JWT
+INFOPLIST_FILE = $(PROJECT_NAME)/$(TARGET_NAME)-Info.plist
+
+// Versioning.
+CURRENT_PROJECT_VERSION = $(JWT_MAJOR_VERSION).$(JWT_MINOR_VERSION)
+
+// Compiler - Language.
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREFIX_HEADER = $(PROJECT_NAME)/$(TARGET_NAME)-Prefix.pch
