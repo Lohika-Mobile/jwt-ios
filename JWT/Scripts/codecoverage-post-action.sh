@@ -4,7 +4,7 @@ if [ "$COLLECT_COVERAGE_DATA" == "YES" ]; then
     echo Running CodeCoverage ... "${CONFIGURATION_TEMP_DIR}"
     if [ "$BUILD_TARGET_PLATFORM" == "iphoneos" ]; then
         echo "Copying CodeCoverage from device ..."
-        "${SRCROOT}/Scripts/DeviceAccessTool" -o coverage -app com.lohika.TestHost -to "${OBJROOT}"
+        "${SRCROOT}/Scripts/DeviceAccessTool" -o coverage -app com.lohika.TestHost -target "${PROJECT_NAME}" -to "${OBJROOT}"
     fi
 
     GCOV_EXCLUDE='(.*./Developer/SDKs/.*)|(.*./Developer/Toolchains/.*)|(.*Tests\.m)|(.*Tests/.*)'

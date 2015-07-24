@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1F5F0491B5E6BD000C9BD63"
-               BuildableName = "Library.framework"
+               BuildableName = "JWT.framework"
                BlueprintName = "Library"
                ReferencedContainer = "container:JWT.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1F5F0541B5E6BD000C9BD63"
-               BuildableName = "Tests.xctest"
+               BuildableName = "JWTTests.xctest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:JWT.xcodeproj">
             </BuildableReference>
@@ -85,7 +85,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1F5F0541B5E6BD000C9BD63"
-               BuildableName = "Tests.xctest"
+               BuildableName = "JWTTests.xctest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:JWT.xcodeproj">
             </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1F5F0491B5E6BD000C9BD63"
-            BuildableName = "Library.framework"
+            BuildableName = "JWT.framework"
             BlueprintName = "Library"
             ReferencedContainer = "container:JWT.xcodeproj">
          </BuildableReference>
@@ -114,7 +114,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1F5F0491B5E6BD000C9BD63"
-            BuildableName = "Library.framework"
+            BuildableName = "JWT.framework"
             BlueprintName = "Library"
             ReferencedContainer = "container:JWT.xcodeproj">
          </BuildableReference>
@@ -132,7 +132,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1F5F0491B5E6BD000C9BD63"
-            BuildableName = "Library.framework"
+            BuildableName = "JWT.framework"
             BlueprintName = "Library"
             ReferencedContainer = "container:JWT.xcodeproj">
          </BuildableReference>
